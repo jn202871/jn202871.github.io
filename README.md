@@ -1,0 +1,1 @@
+The literally only reason this is a public repository is because now I can use github pages on a free account. Please do not look at my awful awful html, css, or javascript. I do not know how to use either of those languges.
