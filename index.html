@@ -1,147 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/d87601c4e0.js" crossorigin="anonymous"></script>
 </head>
-<script src="https://kit.fontawesome.com/d87601c4e0.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/lowercard.css">
-<link rel="stylesheet" href="css/textcard.css">
-<link rel="stylesheet" href="css/cursor.css">
 <body>
-    <div id="cards">
-        <a href="https://github.com/jn202871/Library-Book-Inventory-System">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-book"></i>
+    <nav>
+        <div id="logo" class="navbar">
+            <a href="#">
+                <i class="fa-solid fa-code-branch"></i>
+            </a>
+        </div>
+        <div id="links" class="navbar">
+            <a href="#">ABOUT</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">BLOG</a>
+        </div>
+        <div id="socials" class="navbar">
+            <a href="https://github.com/jn202871">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jaybnash/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div id="contact" class="navbar">
+            <a href="#" class="glowButton">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="image article">
+                
             </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
+            <div class="description article">
+                <p>
+                    Java program utlizing a Binary Search Tree to store a retrieve library books and information regarding them.
+                    <br><br>
+                    This program is able to save and retireve information from a locally created and stored .txt file.
+                    <br><br>
+                    The GUI was created with Apache NetBeans and includes searching for, adding, removing and editing books.
+                </p>
+            </div>
+            <div class="title article">
+                <h2>Library Inventory System</h2>
+                <a href="https://github.com/jn202871/Library-Book-Inventory-System">
                 <i class="fa-solid fa-book"></i>
-                <div class="card-info-title">
-                  <h3>Library Inventory</h3>  
-                  <h4>Implimenting Data Structures</h4>
-                </div>    
-              </div>
+                </a>
             </div>
-          </div>
-        </div>
-        </a>
-        <a href="https://github.com/jn202871/Random-Color-Gradiant-Array">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-diagram-project"></i>
+            <div class="articleNav article">
+                <button class="articleButton" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-angles-left fa-2xs"></i>
+                </button>
+                <button class="articleButton" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-angles-right fa-2xs"></i>
+                </button>
             </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <i class="fa-solid fa-diagram-project"></i>
-                <div class="card-info-title">
-                  <h3>RGB Gradiant Array</h3>  
-                  <h4>Logical Randomization</h4>
-                </div>    
-              </div>  
-            </div>
-          </div>
-        </div>
-        </a>
-        <a href="https://github.com/jn202871/Data-Structures">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-                <i class="fa-solid fa-sitemap"></i>
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <i class="fa-solid fa-sitemap"></i>
-                <div class="card-info-title">
-                  <h3>Data Structures</h3>  
-                  <h4>Implementations of Various Data Structures</h4>
-                </div>    
-              </div>
-            </div>
-          </div>
-        </div>
-        </a>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-chess-rook"></i>
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <i class="fa-solid fa-chess-rook"></i>
-                <div class="card-info-title">
-                  <h3>Array Based Chess</h3>  
-                  <h4>It's an Overengineered Work in Progress</h4>
-                </div>    
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <i class="fa-solid fa-lock"></i>
-                <div class="card-info-title">
-                  <h3>Project 5</h3>  
-                  <h4>It's Not Ominous</h4>
-                </div>    
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-key"></i>
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <i class="fa-solid fa-key"></i>
-                <div class="card-info-title">
-                  <h3>Project 6</h3>  
-                  <h4>I Just Haven't Done These Three Ok</h4>
-                </div>    
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
 
-        <div class="lowerCard">
-            <div class="lowerCard-info-wrapper">
-            <div class="lowerCard-info">
-                <div class="lowerCard-info-title">
-                    <h5>Pick a Card, Well... One Of The Top Three Cards</h5>  
-                  </div>
-                </div>
+        <article data-index="1" data-status="inactive">
+            <div class="image article">
+                
             </div>
-        </div>
-
-        <!--<div class="textCard">
-            <div class="textCard-info-wrapper">
-            <div class="textCard-info">
-                <div class="textCard-info-title">
-                    <h6>Pick a Card</h6>  
-                  </div>
-                </div>
+            <div class="description article">
+                <p>
+                    Java program utlizing a Binary Search Tree to store a retrieve library books and information regarding them.
+                    <br><br>
+                    This program is able to save and retireve information from a locally created and stored .txt file.
+                    <br><br>
+                    The GUI was created with Apache NetBeans and includes searching for, adding, removing and editing books.
+                </p>
             </div>
-        </div> -->
-        </div>
-
-        
-
-<script src="js/cards.js"></script>
-<script src="js/clicker.js"></script>
-<div id="cursor"></div>
-<script src="js/cursor.js"></script>
-
+            <div class="title article">
+                <h2>Library Inventory System</h2>
+                <a href="https://github.com/jn202871/Library-Book-Inventory-System">
+                <i class="fa-solid fa-book"></i>
+                </a>
+            </div>
+            <div class="articleNav article">
+                <button class="articleButton" type="button" onclick="handleLeftClick()">
+                    <i class="fa-solid fa-angles-left fa-2xs"></i>
+                </button>
+                <button class="articleButton" type="button" onclick="handleRightClick()">
+                    <i class="fa-solid fa-angles-right fa-2xs"></i>
+                </button>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
