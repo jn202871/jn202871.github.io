@@ -10,7 +10,7 @@ const handleLeftClick = () => {
         
   currentSlide.dataset.status = "after";
   
-  nextSlide.dataset.status = "becoming-active-from-before";
+  nextSlide.dataset.status = "become-active-before";
   
   setTimeout(() => {
     nextSlide.dataset.status = "active";
@@ -26,7 +26,7 @@ const handleRightClick = () => {
   
   currentSlide.dataset.status = "before";
   
-  nextSlide.dataset.status = "becoming-active-from-after";
+  nextSlide.dataset.status = "become-active-after";
   
   setTimeout(() => {
     nextSlide.dataset.status = "active";
