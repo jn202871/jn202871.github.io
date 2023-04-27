@@ -59,6 +59,15 @@ nav {
     font-size: 2.5rem;
 }
 
+#links > .pro {
+    color: rgb(165, 183, 244);
+}
+
+#links > .abt,
+#links > .blog {
+    color: rgb(50, 61, 97);
+}
+
 #contact,
 #links,
 #socials,
