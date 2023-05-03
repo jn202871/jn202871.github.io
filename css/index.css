@@ -3,14 +3,40 @@
     --border-color: rgb(255,255,255,0.1);
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(50, 61, 97) rgb(6,11,25);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(6,11,25);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 61, 97);
+    border-radius: 10px;
+    border: none;
+  }
+
 body {
     background-color: var(--background-color);
     display:flex;
     flex-direction: column;
     height: 100vh;
     margin: 0px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    margin: 5px;
 }
 
 * {
@@ -30,6 +56,7 @@ a {
 nav {
     display: flex;
     width: 100%;
+    height: 125px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -61,6 +88,15 @@ nav {
 }
 
 #links > .abt {
+    color: rgb(165, 183, 244);
+}
+
+#contactButton > h1 {
+    color: rgb(86, 107, 169);
+    transition: color .5s ease-in-out;
+}
+
+#contactButton > h1:hover, #contactButton > h1:active {
     color: rgb(165, 183, 244);
 }
 
@@ -96,6 +132,24 @@ nav {
 main {
     flex-grow: 1;
     position: relative;
+}
+
+hr {
+    border: none;
+    border-top: 3px double rgb(50, 61, 97);
+    color: rgb(86, 107, 169);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width: 600px;
+}
+
+hr:after {
+    background: rgb(6,11,25);
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 main > article {

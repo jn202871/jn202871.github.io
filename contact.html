@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Nash</title>
     <link rel="stylesheet" href="css/contact.css">
-    <script src="js/contact.js"></script>
-    <script src="https://kit.fontawesome.com/d87601c4e0.js" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script><script src="https://kit.fontawesome.com/d87601c4e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -17,7 +16,7 @@
             </a>
         </div>
         <div id="links" class="navbar">
-            <a class="abt" href="#">ABOUT</a>
+            <a class="abt" href="index.html">ABOUT</a>
             <a class="pro" href="projects.html">PROJECTS</a>
             <a class="blog" href="blog.html">BLOG</a>
         </div>
@@ -37,7 +36,33 @@
     </nav>
 
     <main>
-        <p>WIP</p>
+        <div style="padding-top: 100px;"></div>
+        <div class="container">
+            <h1 style="text-align: center; letter-spacing: 5px;">Contact Form</h1>
+            <hr>
+            <form action="https://getform.io/f/1fe085f1-a957-440f-86dc-d333067b6070" method="post" id="contact-form">
+                <div style="display: flex; flex-grow: fill; gap: 160px;">
+                    <div style="flex-basis: 40%;">
+                    <label for="name"><p>Name</p></label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                    <div style="flex-basis: 40%; ">
+                    <label for="email"><p>Email</p></label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+              <label for="subject"><p>Subject</p></label>
+              <input type="text" id="subject" name="subject" placeholder="Subject..">
+          
+              <label for="message"><p>Message</p></label>
+              <textarea type="text" id="message" name="message" placeholder="Message.." style="height:250px; font-family: Rubik, sans-serif;"></textarea>
+          
+              <input type="hidden" name="_gotcha" style="display:none !important">
+
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
     </main>
 </body>
 </html>
