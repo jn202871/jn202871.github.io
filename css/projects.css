@@ -138,13 +138,18 @@ main > article[data-status="become-active-after"] {
 }
 
 main > article:first-child > .image {
-    background-image: url(https://images.unsplash.com/photo-1472173148041-00294f0814a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-image: url("../../resources/Website.png");
     background-position: center;
-    background-size: 100% 100%;
 }
 
 main > article:nth-child(2) > .image {
     background-image: url("../../resources/RGBmap.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+main > article:nth-child(3) > .image {
+    background-image: url(https://images.unsplash.com/photo-1472173148041-00294f0814a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-position: center;
     background-size: 100% 100%;
 }
