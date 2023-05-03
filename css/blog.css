@@ -64,7 +64,8 @@ nav {
 }
 
 #links > .abt,
-#links > .pro {
+#links > .pro,
+#contact > .glowButton {
     color: rgb(50, 61, 97);
 }
 
