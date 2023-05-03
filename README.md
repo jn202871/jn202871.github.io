@@ -1,1 +1,1 @@
-The literally only reason this is a public repository is because now I can use github pages on a free account. Please do not look at my awful awful html, css, or javascript. I do not know how to use any of those languges.
+Personal website hosted using github pages, there is... little to no documentation so if you want to take a peak at the code it's a bit like the wild west at the moment.
