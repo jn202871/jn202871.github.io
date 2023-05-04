@@ -3,6 +3,28 @@
     --border-color: rgb(255,255,255,0.1);
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(50, 61, 97) rgb(6,11,25);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(6,11,25);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 61, 97);
+    border-radius: 10px;
+    border: none;
+  }
+
 body {
     background-color: var(--background-color);
     display:flex;
