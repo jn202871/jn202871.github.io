@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    overflow: overlay;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -38,10 +38,10 @@ body {
     box-sizing: border-box;
 }
 
-h1,h2,h3,a,p,span {
+h1,h2,h3,a,p,span,center {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    color: rgb(86, 107, 169);
+    color: rgb(154, 167, 211);
 }
 
 a {
@@ -214,3 +214,99 @@ main > article > .articleNav > .articleButton:hover {
 main > article > .articleNav > .articleButton:nth-child(2) {
     border-left: 1px solid var(--border-color);
 }
+
+.wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+  }
+  
+  input[type='checkbox'] {
+    display: none;
+  }
+  
+  .lbl-toggle {
+    display: block;
+  
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+  
+    padding: 1rem;
+  
+    color: #6984d0;
+    background: #202c41;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+  }
+  
+  .lbl-toggle:hover {
+    color: #556cac;
+  }
+  
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+  }
+  
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .collapsible-content {
+    max-height: 0px;
+    overflow: overlay;
+    transition: max-height .25s ease-in-out;
+  }
+  
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 50vh;
+  }
+  
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .collapsible-content .content-inner {
+    background: #171e29;
+    border-bottom: 1px solid #202c41;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 2.5rem;
+    line-height: 200%;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(50, 61, 97) rgb(6,11,25);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(6,11,25);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 61, 97);
+    border-radius: 10px;
+    border: none;
+  }
